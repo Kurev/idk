@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(245,107,167);
+    background: radial-gradient(circle, rgba(245,107,167,1) 0%, rgba(132,161,195,1) 100%);
+    color: white;
+}
+
+.container{
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 30px 30px;
+    animation: backInUp;
+    animation-duration: 1s;
+}
+
+.container h1{
+    animation: backInLeft;
+    animation-duration: 1.7s;
+}
+
+
+.container p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    animation: backInRight;
+    animation-duration: 1.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 70%;
+        height: auto;
+    }
+
+    .container p{
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
